@@ -13,7 +13,7 @@ export interface EventUpdatedEvent {
         price: string;
         isFree: boolean;
         url?: string;
-        order: { _id: string };
+        order?: { _id: string };
         category: { _id: string; name: string };
         organizer: { _id: string; firstName: string; lastName: string };
         version: number;

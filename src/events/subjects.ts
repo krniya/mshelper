@@ -10,4 +10,5 @@ export enum Subjects {
     PaymentCreated = "payment:created",
     EventCreated = "event:created",
     EventUpdated = "event:updated",
+    UserDeleted = "user:deleted",
 }
