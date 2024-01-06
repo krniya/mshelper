@@ -5,13 +5,19 @@ export interface OrderCreatedEvent {
     subject: Subjects.OrderCreated;
     data: {
         id: string;
-        version: number;
-        status: OrderStatus;
-        userId: string;
-        expiresAt: string;
+        createdAt: Date;
+        stripeId: string;
+        totalAmount: string;
         event: {
-            id: string;
-            price: number;
+            _id: string;
+            title: string;
         };
+        buyer: {
+            _id: string;
+            firstName: string;
+            lastName: string;
+        };
+        expiresAt: Date;
+        version: number;
     };
 }

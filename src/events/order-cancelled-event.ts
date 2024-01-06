@@ -4,9 +4,17 @@ export interface OrderCancelledEvent {
     subject: Subjects.OrderCancelled;
     data: {
         id: string;
-        version: number;
+        createdAt: Date;
+        stripeId: string;
+        totalAmount: string;
         event: {
-            id: string;
+            _id: string;
+            title: string;
+        };
+        buyer: {
+            _id: string;
+            firstName: string;
+            lastName: string;
         };
     };
 }
