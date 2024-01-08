@@ -1,6 +1,4 @@
 import { Subjects } from "./subjects";
-import { OrderStatus } from "./types/order-status";
-
 export interface OrderCreatedEvent {
     subject: Subjects.OrderCreated;
     data: {
@@ -11,6 +9,7 @@ export interface OrderCreatedEvent {
         event: {
             _id: string;
             title: string;
+            price: string;
         };
         buyer: {
             _id: string;
