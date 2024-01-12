@@ -4,8 +4,6 @@ export interface OrderCancelledEvent {
     data: {
         id: string;
         createdAt: Date;
-        stripeId: string;
-        totalAmount: string;
         event: {
             _id: string;
             title: string;

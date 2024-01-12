@@ -4,8 +4,6 @@ export interface OrderCreatedEvent {
     data: {
         id: string;
         createdAt: Date;
-        stripeId: string;
-        totalAmount: string;
         event: {
             _id: string;
             title: string;
@@ -17,6 +15,5 @@ export interface OrderCreatedEvent {
             lastName: string;
         };
         expiresAt: Date;
-        version: number;
     };
 }
